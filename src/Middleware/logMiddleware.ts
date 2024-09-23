@@ -1,19 +1,3 @@
-// import { Request, Response, NextFunction } from "express";
-
-// import LogController from "../Controller/logController";
-
-// const logMiddleware = (req: Request, res: Response, next: NextFunction) => {
-//   const jwt_token = req.headers.authorization?.split(" ")[1] || null;
-//   const user = req.user || null;
-
-//   // Log the request using LogController
-//   LogController.logRequest(req, user, jwt_token);
-
-//   // Continue to the next middleware
-//   next();
-// };
-
-// export default logMiddleware;
 
 import { Request, Response, NextFunction } from "express";
 import jwt from "jsonwebtoken";
